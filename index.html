@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <!--typography and color system-->
     <div class="max-w-xs sm:max-w-xl px-5 mx-auto mt-10 font-mono">
         <h1 class="text-2xl sm:text-3xl font-bold">Join Our Newsletter</h1>
         <h2 class="my-5 sm:text-lg">Get weekly updates and tips straight to your inbox</h2>
@@ -16,6 +17,45 @@
             Please enter a valid email adress
         </div>
         <button class="border px-4 py-2 bg-blue-700 text-white hover:bg-blue-600 text-sm sm:text-base">Subscribe Now</button>
-    </div>    
+    </div> 
+    
+    
+    <!--Product card-->
+    <div class="relative max-w-xs sm:max-w-xl bg-white mx-auto mt-10 font-mono rounded-lg shadow-lg overflow-hidden">
+        <img 
+            src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Product image"
+            class="w-full h-fit object-cover rounded-t-lg"
+        >
+        <button 
+            class="absolute top-3 left-8 bg-blue-600 rounded-full shadow-md 
+                    flex items-center justify-center text-white py-1 px-4">
+            New
+        </button>
+        <div class="border rounded-b-lg">
+            <div class="p-2 bg-black text-white">
+                Electronics
+            </div>
+
+            <h1 class="p-4 text-xl sm:text-2xl font-bold">Wireless Headphones</h1>
+            <div class="flex flex-row justify-evenly w-40 items-center">
+                <h2 class="text-bold text-red-500 text-xl lg:text-2xl">$79</h2>
+                <h2 class="line-through text-gray-400 text-lg lg:text-xl">$129</h2>
+            </div>
+
+            <p class="p-4 text-sm sm:text-base">
+                Hight-fidelity wireless headphones with noise cancellationand 30-hour battery life
+            </p>
+
+            <div class="p-4 text-sm sm:text-base">
+                <p>In stock</p>
+
+                <div class="mt-4">
+                    <button class="border p-2 rounded-lg bg-blue-700 hover:bg-blue-600 text-white">Add to cart</button>
+                    <button class="border p-1 rounded-lg text-gray-700 hover:bg-blue-400 hover:text-white">Wishlist</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
