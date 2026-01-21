@@ -21,7 +21,7 @@
     
     
     <!--Product card-->
-    <div class="relative max-w-xs sm:max-w-xl bg-white mx-auto mt-10 font-mono rounded-lg shadow-lg overflow-hidden">
+    <div class="relative max-w-xs sm:max-w-xl bg-white mx-auto mt-10 font-mono rounded-lg shadow-lg shadow-black overflow-hidden">
         <img 
             src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Product image"
@@ -56,6 +56,46 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!--Sign in form-->
+    <div class="max-w-sm md:max-w-xl mx-auto border mt-10 shadow-lg shadow-black rounded-lg flex flex-col">
+        <h1 class="text-3xl font-bold p-4">Sign into your account</h1>
+
+        <label for="email" class="px-4 text-lg">Email adress</label>
+        <input 
+            type="email" 
+            placeholder="Your@email.com" 
+            class="p-2 px-2 border border-gray-500 w-130 ml-4 focus:border-blue-600"
+            required
+        >
+
+        <label for="password" class="px-4 text-lg mt-4">Password</label>
+        <input 
+            type="password" 
+            placeholder="Password" 
+            class="p-2 px-2 border border-gray-500 w-130 ml-4"
+            required
+        >
+
+        <div class="mt-5 flex flex-row justify-evenly">
+            <input 
+                type="submit" 
+                role="button" 
+                value="Sign in"  
+                class="w-50 px-4 py-2 border bg-blue-700 text-white text-lg hover:bg-blue-600 rounded-lg mb-5"
+            >
+
+            <input 
+                type="submit" 
+                role="button" 
+                value="Disabled" 
+                class="w-50 px-4 py-2 border bg-gray-400 text-white text-lg rounded-lg mb-5 disabled:cursor-not-allowed"
+                disabled
+            >
+        </div>
+        
+        
     </div>
 </body>
 </html>
